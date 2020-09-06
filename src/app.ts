@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
 import 'reflect-metadata';
 import 'dotenv/config';
 
@@ -23,6 +25,7 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
     });
   }
 
+  // eslint-disable-next-line no-console
   console.error(err);
 
   return response.status(500).json({
